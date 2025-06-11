@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Randy Tejeda</title>
     <link rel="stylesheet" href="./src/css/styles.css">
-</head>
-<body class="bg-gradient-to-tr from-black to-blue-900">
-        
-    
+    <style>
+        .typewriter::after{
+            content: "|";
+            animation: blink 0.7s infinite;
+        }
 
+        @keyframes blink{
+            0%, 50%, 100%{
+                opacity: 1;
+            }
+            25%, 75%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body >
+        <div class="bg-gradient-to-tr from-black to-blue-900">
 <nav class=" border-gray-200  " >
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -51,7 +64,7 @@
         
        <p class=" text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Hola, mi nombre es</p>
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-500">RANDY TEJEDA</h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Desarrollador de software</p>
+        <p id="pDescription" class=" mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 typewriter"></p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
            
             <a href="./src/assets/CV Randy.pdf2" download="CV Randy.pdf" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
@@ -91,6 +104,10 @@
         </div> 
     </div>
 </section>
+        </div>
+    
+
+
 
 
    
